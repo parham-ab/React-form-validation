@@ -1,0 +1,113 @@
+.singup-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  .form-container {
+    background-color: #dadada;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: #64646f33 0px 10px 29px 0px;
+    h1 {
+      text-align: left;
+      margin: 0 0 30px 0;
+      font-size: 2.3rem;
+      color: #005ec9;
+    }
+    .formfields {
+      label {
+        display: flex;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin: 8px 0;
+      }
+      input {
+        width: 300px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        font-size: 1rem;
+      }
+      span {
+        background-color: #ce3434;
+        color: #fff;
+        margin: 5px 0 0 0;
+        width: fit-content;
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 0.7rem;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 30px 15px;
+      .regulations-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label {
+          color: #005ec9;
+        }
+        input {
+          width: fit-content;
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          appearance: none;
+          border: solid 1px #00788d;
+          transition: all 0.3s;
+          &:checked {
+            border-radius: 100%;
+            border: none;
+            background-color: #006f83;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .submit-container {
+    p {
+      color: #004799;
+      font-size: 0.9rem;
+      margin: 10px;
+      a {
+        color: #00830b;
+        font-size: 1rem;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 7px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: #004ba0;
+      color: #fff;
+      &:hover {
+        background-color: #00418b;
+        transition: all 0.3s;
+      }
+      &:active {
+        background-color: #003877;
+        transition: all 0.2s;
+      }
+    }
+  }
+  // media query
+  @media (max-width: 400px) {
+    .formfields {
+      input {
+        width: fit-content !important;
+      }
+    }
+    .regulations-container {
+      input {
+        width: 20px !important;
+      }
+    }
+  }
+}
