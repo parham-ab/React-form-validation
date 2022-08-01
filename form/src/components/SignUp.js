@@ -80,7 +80,7 @@ const SignUp = () => {
           {errors.name && touched.name && (
             <Animated
               animationIn="flash"
-              animationOut="fadeOut"
+              animationOut="zoomOut"
               isVisible={true}
             >
               <span>{errors.name}</span>
@@ -101,7 +101,7 @@ const SignUp = () => {
           {errors.email && touched.email && (
             <Animated
               animationIn="flash"
-              animationOut="fadeOut"
+              animationOut="zoomOut"
               isVisible={true}
             >
               <span>{errors.email}</span>
@@ -123,7 +123,7 @@ const SignUp = () => {
           {errors.password && touched.password && (
             <Animated
               animationIn="flash"
-              animationOut="fadeOut"
+              animationOut="zoomOut"
               isVisible={true}
             >
               <span>{errors.password}</span>
@@ -144,7 +144,7 @@ const SignUp = () => {
           {errors.confirmPassword && touched.confirmPassword && (
             <Animated
               animationIn="flash"
-              animationOut="fadeOut"
+              animationOut="zoomOut"
               isVisible={true}
             >
               <span>{errors.confirmPassword}</span>
@@ -173,7 +173,7 @@ const SignUp = () => {
           {errors.isAccepted && touched.isAccepted && (
             <Animated
               animationIn="flash"
-              animationOut="fadeOut"
+              animationOut="zoomOut"
               isVisible={true}
             >
               <span>{errors.isAccepted}</span>

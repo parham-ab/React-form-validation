@@ -5,7 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   .form-container {
-    background-color: #dadada;
+    background-color: #ebebebb0;
     padding: 30px;
     border-radius: 10px;
     box-shadow: #64646f33 0px 10px 29px 0px;
@@ -24,8 +24,9 @@
       }
       input {
         width: 300px;
-        border-radius: 5px;
         border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #005ec9;
         padding: 5px;
         font-size: 1rem;
       }
@@ -52,6 +53,7 @@
         }
         input {
           width: fit-content;
+          border-radius: 30%;
           cursor: pointer;
           width: 20px;
           height: 20px;
