@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// animate.css
 import { Animated } from "react-animated-css";
 // react tooltip
 import ReactTooltip from "react-tooltip";

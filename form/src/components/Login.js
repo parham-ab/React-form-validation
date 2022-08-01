@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+// animate.css
+import { Animated } from "react-animated-css";
 // react-router-dom
 import { Link } from "react-router-dom";
 // react toastify
@@ -62,7 +64,15 @@ const Login = () => {
             onChange={changeHandler}
             onBlur={focusHandler}
           />
-          {errors.email && touched.email && <span>{errors.email}</span>}
+          {errors.email && touched.email && (
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.email}</span>
+            </Animated>
+          )}
         </div>
         <div className="formfields">
           <label htmlFor="password">Password</label>
@@ -77,7 +87,13 @@ const Login = () => {
             onBlur={focusHandler}
           />
           {errors.password && touched.password && (
-            <span>{errors.password}</span>
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.password}</span>
+            </Animated>
           )}
         </div>
         <div className="submit-container">
