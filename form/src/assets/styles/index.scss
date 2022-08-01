@@ -1,3 +1,5 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik:ital,wght@0,300;1,300&display=swap");
 // CSS resets
 *,
 *::before,
@@ -10,7 +12,8 @@
   outline: none;
 }
 body {
-  font-family: tahoma;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 // styles
 @import "forms";
