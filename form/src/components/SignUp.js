@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Animated } from "react-animated-css";
 // react tooltip
 import ReactTooltip from "react-tooltip";
 // react-router-dom
@@ -75,7 +76,15 @@ const SignUp = () => {
             onChange={changeHandler}
             onBlur={focusHandler}
           />
-          {errors.name && touched.name && <span>{errors.name}</span>}
+          {errors.name && touched.name && (
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.name}</span>
+            </Animated>
+          )}
         </div>
         <div className="formfields">
           <label htmlFor="email">Email</label>
@@ -88,7 +97,15 @@ const SignUp = () => {
             onChange={changeHandler}
             onBlur={focusHandler}
           />
-          {errors.email && touched.email && <span>{errors.email}</span>}
+          {errors.email && touched.email && (
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.email}</span>
+            </Animated>
+          )}
         </div>
         <div className="formfields">
           <label htmlFor="password">Password</label>
@@ -103,7 +120,13 @@ const SignUp = () => {
             onBlur={focusHandler}
           />
           {errors.password && touched.password && (
-            <span>{errors.password}</span>
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.password}</span>
+            </Animated>
           )}
         </div>
         <div className="formfields">
@@ -118,7 +141,13 @@ const SignUp = () => {
             onBlur={focusHandler}
           />
           {errors.confirmPassword && touched.confirmPassword && (
-            <span>{errors.confirmPassword}</span>
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.confirmPassword}</span>
+            </Animated>
           )}
         </div>
         <div className="formfields">
@@ -141,7 +170,13 @@ const SignUp = () => {
             />
           </div>
           {errors.isAccepted && touched.isAccepted && (
-            <span>{errors.isAccepted}</span>
+            <Animated
+              animationIn="flash"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <span>{errors.isAccepted}</span>
+            </Animated>
           )}
         </div>
         <div className="submit-container">
