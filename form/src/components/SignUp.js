@@ -73,7 +73,7 @@ const SignUp = () => {
             id="name"
             value={data.name}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.name && touched.name && <span>{errors.name}</span>}
         </div>
@@ -86,7 +86,7 @@ const SignUp = () => {
             id="email"
             value={data.email}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.email && touched.email && <span>{errors.email}</span>}
         </div>
@@ -100,7 +100,7 @@ const SignUp = () => {
             id="password"
             value={data.password}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.password && touched.password && (
             <span>{errors.password}</span>
@@ -115,7 +115,7 @@ const SignUp = () => {
             id="confirmPassword"
             value={data.confirmPassword}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.confirmPassword && touched.confirmPassword && (
             <span>{errors.confirmPassword}</span>
@@ -137,7 +137,7 @@ const SignUp = () => {
               id="isAccepted"
               value={data.isAccepted}
               onChange={changeHandler}
-              onFocus={focusHandler}
+              onBlur={focusHandler}
             />
           </div>
           {errors.isAccepted && touched.isAccepted && (

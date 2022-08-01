@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 import { notify } from "../functions/toast";
 import "react-toastify/dist/ReactToastify.css";
 // title changer hook
-import  MyTitle  from "../hooks/MyTitle";
+import MyTitle from "../hooks/MyTitle";
 // validate function
 import { validate } from "../functions/validate";
 
@@ -30,7 +30,7 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     if (!Object.keys(errors).length) {
-      notify("success", "Loged in successfully");
+      notify("success", "Logged in successfully");
     } else {
       setTouched({
         email: true,
@@ -60,7 +60,7 @@ const Login = () => {
             id="email"
             value={data.email}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.email && touched.email && <span>{errors.email}</span>}
         </div>
@@ -74,7 +74,7 @@ const Login = () => {
             id="password"
             value={data.password}
             onChange={changeHandler}
-            onFocus={focusHandler}
+            onBlur={focusHandler}
           />
           {errors.password && touched.password && (
             <span>{errors.password}</span>
@@ -85,7 +85,7 @@ const Login = () => {
             Login
           </button>
           <p>
-            Dont have an account ? <Link to="/signup">Signup</Link>
+            Don't have an account ? <Link to="/signup">Signup</Link>
           </p>
         </div>
       </form>
